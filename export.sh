@@ -7,4 +7,4 @@ for f in */*.svg; do
 	inkscape $f -e ../.tmp/`basename -s .svg $f`.png -d 72 -h 200 -w 200
 done
 
-montage -tile 10x -geometry +0+0 ../.tmp/* export.png
+montage -tile 15x -geometry +0+0 ../.tmp/* export.png
